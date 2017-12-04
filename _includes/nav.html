@@ -1,0 +1,11 @@
+{% assign nodes = site.pages | where: 'layout', 'default' | sort: 'title' %}
+
+<nav class="nav nav-pills justify-content-end">
+    {%- for node in nodes %}
+        {%- assign is_active = false %}
+        {%- if node.url == page.url %}
+            {% assign is_active = true %}
+        {%- endif %}
+    <a class="nav-page {% if is_active %} active {% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+    {%- endfor %}
+</nav>

@@ -3,3 +3,64 @@
 @charset "UTF-8";
 
 @import "main";
+
+$primary-color: darkgrey;
+$accent-color: crimson;
+$background-color: #ffffff;
+$text-color: #2e2e2e;
+
+$font: 'Roboto' ,  sans-serif;
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+    font: $font;
+}
+
+p{
+    font-size: 18px;
+}
+
+h1{ 
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    color: $primary-color;
+}
+
+ul{
+    list-style-type: none;
+    font: 100% $font-stack;
+}
+ul .time {
+    font-weight: bold;
+    color: $primary-color;
+    list-style-type: disc;
+}
+
+.big-quote{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.nav-page{
+    margin: 20px;
+    color: $text-color;
+}
+
+.nav-page:active,
+.nav-page:hover{
+    text-decoration: none;
+    background-color: none;
+    color: $primary-color;
+}
+
+.footer{
+    float: left;
+}
