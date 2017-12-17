@@ -10,18 +10,57 @@ $background-color: #ffffff;
 $text-color: #2e2e2e;
 
 
-
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
 body{
+    position: relative;
+    margin: 0;
+    min-height: 100%;
     background-color: $background-color;
     color: $text-color;
-    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'PT Sans Narrow' , sans-serif;
+    padding-bottom: 100px;
+}
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+.body {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    float: left;
+    border-top: 1px;
+    border-color: $text-color;
+  }
+
+.footer-content{
+    margin: 20px;
 }
 
 p{
     font-size: 18px;
 }
 
+.jumbotron{
+    height: 300px;
+    text-align: center;
+}
+
 h1{ 
+    margin: 30px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
 }
@@ -31,36 +70,105 @@ h2{
 }
 
 h2{
-    color: $primary-color;
+    color: $accent-color;
 }
 
 ul{
     list-style-type: none;
-    font: 100% $font-stack;
 }
 ul .time {
     font-weight: bold;
-    color: $primary-color;
+    color: $accent-color;
     list-style-type: disc;
 }
 
-.big-quote{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 .nav-page{
+    float:right;
     margin: 20px;
     color: $text-color;
 }
 
-.nav-page:active,
 .nav-page:hover{
     text-decoration: none;
     background-color: none;
-    color: $primary-color;
+    color: $accent-color;
+}
+.nav-page .active{
+    text-decoration: none;
+    background-color: none;
+    color: $accent-color;
+}
+.logo{
+    padding: 10px;
+    height: 100%;
+    float: left;
 }
 
-.footer{
+hr{
+    margin-bottom: 0px;
+}
+
+.progress{
+    margin: 20px 0; 
+}
+
+select{
+    height: 30px;
+}
+
+mark{
+    margin: none;
+    color: $accent-color;
+    background-color: $background-color;
+}
+
+mark:hover{
+    cursor: help;
+}
+
+.next{
+    float: right;
+}
+
+.previous{
     float: left;
+}
+
+.pager{
+    padding: 0px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.progress-bar{
+    background-color: $accent-color;
+}
+
+td:nth-child(2){
+    text-align: right;
+}
+
+.book{
+    margin: 40px;
+}
+
+.checkbox{
+    padding: 10px;
+}
+
+.button{
+    color: $accent-color;
+    background-color: $background-color;
+    border-color: $accent-color;
+    border: 3px;
+    border-radius: 0px;
+}
+
+.btn-tweede{
+    background-color: $background-color;
+    border-color: $accent-color;
+    border: 3px;
+    border-radius: 0px;
 }
