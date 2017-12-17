@@ -1,0 +1,28 @@
+<!--div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h5>Sitemap</h5>
+            {%- for node in nodes %}
+            {%- assign is_active = false %}
+            {%- if node.url == page.url %}
+                {% assign is_active = true %}
+            {%- endif %}
+            <div class="col-12">
+                <a class="nav-page {% if is_active %} active {% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+            </div>
+        {%- endfor %}
+        </div>
+        <div class="col-4">
+            <h5>Contact</h5>
+            <p>Thomas Lauriks</p>
+            <p>info@fetch.be</p>
+            <p>03 644 88 99</p>
+        </div>
+    </div>
+</div-->
+
+<nav class="navbar footer justify-content-center">
+    <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="footer-content nav-page">Style guide</a>
+    <p class="footer-content"> info@fetch.be </p>
+    <p class="footer-content"> Made by Thomas Lauriks </p>
+</nav>  
