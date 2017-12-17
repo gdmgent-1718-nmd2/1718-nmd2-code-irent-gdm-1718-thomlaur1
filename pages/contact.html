@@ -15,32 +15,39 @@ title: Contact
     <title>Contact</title>
 </head>
 <body class="page-full">
-    <div class="col-10 col-md-8 col-lg-6 mx-auto">
-        <h2>Stel hier al je vragen.</h2>
-        <p>Heb je een speciale vraag of verzoek? <br>
-        Stuur ons een berichtje en we kijken wat we voor je kunnen doen.</p>
-        <form>
-            <div class="form-group">
-                <input type="name" class="form-control" id="exampleInputName" placeholder="Voornaam">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-lg-6">
+                <h2>Stel hier al je vragen.</h2>
+                <p>Heb je een speciale vraag of verzoek? <br>
+                Stuur ons een berichtje en we kijken wat we voor je kunnen doen.</p>
             </div>
-            <div class="form-group">
-                <input type="surname" class="form-control" id="exampleInputSurname" placeholder="Achternaam">
+            <div class="col-sm-10 col-lg-5">
+                <form>
+                    <div class="form-group">
+                        <input type="name" class="form-control" id="exampleInputName" placeholder="Voornaam">
+                    </div>
+                    <div class="form-group">
+                        <input type="surname" class="form-control" id="exampleInputSurname" placeholder="Achternaam">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+                        <small id="emailHelp" class="form-text text-muted">We delen nooit je gegevens met anderen.</small>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Bericht"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Schrijf me ook in voor de nieuwsbrief.
+                        </label>
+                    </div>
+                    <button type="submit" class="button button-primary">Verzend</button>
+                </form>
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
-                <small id="emailHelp" class="form-text text-muted">We delen nooit je gegevens met anderen.</small>
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Bericht"></textarea>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                <input type="checkbox" class="form-check-input">
-                Schrijf me ook in voor de nieuwsbrief.
-                </label>
-            </div>
-            <button type="submit" class="btn btn-secondary">Verzend</button>
-        </form>
+        </div>
     </div>
+    
 </body>
 </html>

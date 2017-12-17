@@ -1,7 +1,8 @@
 {% assign nodes = site.pages | where: 'layout', 'default' | sort: 'title' %}
 
-<nav class="nav nav-pills justify-content-end">
+<nav class="nav justify-content-between">
     <a class="navbar-brand logo" href="index.html">Fetch.</a>
+    <div class="justify-content-end align-content-center flex-row-reverse">
     {%- assign links = site.data.navigation %}
         {%- for link in links %}
             {%- assign is_active = false %}
@@ -10,4 +11,5 @@
             {%- endif %}
         <a class="nav-page {% if is_active %} active {% endif %}" href="{{ link.url | relative_url }}">{{ link.title }}</a>
         {%- endfor %}
+    </div>
 </nav>

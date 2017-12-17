@@ -57,6 +57,7 @@ p{
 .jumbotron{
     height: 300px;
     text-align: center;
+    background-color: $background-color;
 }
 
 h1{ 
@@ -71,6 +72,15 @@ h2{
 
 h2{
     color: $accent-color;
+}
+
+.big-text{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.big-text .list{
+    margin-left: -40px;
 }
 
 ul{
@@ -103,6 +113,8 @@ ul .time {
 
 
 .logo{
+    color: $accent-color;
+    font-size: 1.5em;
     padding: 17px;
     height: 100%;
     float: left;
@@ -142,9 +154,7 @@ mark:hover{
     padding: 0px;
 }
 
-.btn:hover{
-    cursor: pointer;
-}
+
 
 .progress-bar{
     background-color: $accent-color;
@@ -162,17 +172,42 @@ td:nth-child(2){
     padding: 10px;
 }
 
+.button:hover{
+    cursor: pointer;
+}
+
 .button{
     color: $accent-color;
+    padding: 10px 15px;
+}
+
+.button-primary{
     background-color: $background-color;
     border-color: $accent-color;
-    border: 3px;
+    border: 3px solid;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+
+.button-primary:hover,
+.button-primary:active{
+    text-decoration: none;
+    color: $background-color;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    border: 3px solid $accent-color;
     border-radius: 0px;
 }
 
-.btn-tweede{
-    background-color: $background-color;
-    border-color: $accent-color;
-    border: 3px;
+.form-control{
     border-radius: 0px;
 }
+
+.form-control:active{
+    color: $accent-color;
+}
+
+select{
+    border-radius: 0px;
+}
+
