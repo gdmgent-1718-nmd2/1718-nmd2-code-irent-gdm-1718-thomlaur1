@@ -1,16 +1,15 @@
 -
   title: Contact
-  url: contact.html
+  url: /contact.html
 -
   title: Over ons
-  url: over_ons.html
+  url: /over_ons.html
 -
   title: Praktische info
-  url: info.html
+  url: /info.html
 -
   title: Reserveer
-  url: reserveer.html
+  url: /reserveer.html
 -
   title: Home
-  url: index.html
--
+  url: /index.html

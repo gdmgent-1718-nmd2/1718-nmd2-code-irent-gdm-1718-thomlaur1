@@ -9,6 +9,35 @@ $accent-color: crimson;
 $background-color: #ffffff;
 $text-color: #2e2e2e;
 
+//
+//queries sm
+//
+@media screen and (max-width: 425px){
+    .mhide{
+        display:none;
+    }
+}
+//
+//queries md
+//
+@include media-breakpoint-up(md){
+    .thide{
+        display:none;
+    }
+}
+
+//
+//queries lg
+//
+@include media-breakpoint-up(lg){
+    .dhide{
+        display:none;
+    }
+}
+
+//
+//basics
+//
 
 html {
     height: 100%;
@@ -35,7 +64,88 @@ body{
     margin: 0 auto;
     width: 100%;
   }
-  
+
+//
+//text
+//
+h1{ 
+    margin: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: $accent-color
+}
+
+p{
+    font-size: 18px;
+}
+
+.intro-text{
+    padding-left: 50px;
+    padding-right: 60px; 
+}
+
+.big-text{
+    margin-top: 10px;
+    font-size: 25px;
+}
+mark{
+    margin: none;
+    color: $accent-color;
+    background-color: $background-color;
+}
+
+mark:hover{
+    cursor: help;
+}
+
+//
+//afbeeldingen
+//
+img{
+    max-width: 100%;
+    height: auto;
+}
+.icon{
+    margin-top: 100px;
+    width: 180px;
+}
+
+
+//
+//navigation
+//
+.nav-page{
+    float:right;
+    margin: 20px;
+    color: $text-color;
+}
+
+.nav-page:hover{
+    text-decoration: none;
+    background-color: none;
+    color: $accent-color;
+}
+.active{
+    text-decoration: none;
+    background-color: none;
+    color: $accent-color;
+}
+.logo{
+    color: $accent-color;
+    font-size: 1.5em;
+    padding: 17px;
+    height: 100%;
+    float: left;
+}
+
+//
+//footer
+//
 .footer {
     position: absolute;
     width: 100%;
@@ -50,134 +160,29 @@ body{
     margin: 20px;
 }
 
-p{
-    font-size: 18px;
+//
+//forms
+//
+.form-control{
+    border-radius: 0px;
 }
 
-.jumbotron{
-    height: 300px;
-    text-align: center;
-    background-color: $background-color;
-}
-
-h1{ 
-    margin: 30px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: bold;
-}
-h2{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: bold;
-}
-
-h2{
+.form-control:active{
     color: $accent-color;
 }
-
-.big-text{
-    margin-top: 10px;
-    font-size: 25px;
-}
-
-.big-text .list{
-    margin-left: -40px;
-}
-
-ul{
-    list-style-type: none;
-}
-ul .time {
-    font-weight: bold;
-    color: $accent-color;
-    list-style-type: disc;
-}
-
-.nav-page{
-    float:right;
-    margin: 20px;
-    color: $text-color;
-}
-
-.nav-page:hover{
-    text-decoration: none;
-    background-color: none;
-    color: $accent-color;
-}
-
-.active{
-    text-decoration: none;
-    background-color: none;
-    color: $accent-color;
-}
-
-
-
-.logo{
-    color: $accent-color;
-    font-size: 1.5em;
-    padding: 17px;
-    height: 100%;
-    float: left;
-}
-
-.icon{
-    margin-top: 100px;
-    width: 100%
-
-}
-
-hr{
-    margin-bottom: 0px;
-}
-
-.progress{
-    margin: 20px 0; 
-}
-
-select{
-    height: 30px;
-}
-
-mark{
-    margin: none;
-    color: $accent-color;
-    background-color: $background-color;
-}
-
-mark:hover{
-    cursor: help;
-}
-
-.next{
-    float: right;
-}
-
-.previous{
-    float: left;
-}
-
-.pager{
-    padding: 0px;
-}
-
-
-
 .progress-bar{
     background-color: $accent-color;
 }
-
-td:nth-child(2){
-    text-align: right;
+.progress{
+    margin: 20px 0; 
 }
-
-.book{
-    margin: 40px;
-}
-
 .checkbox{
     padding: 10px;
 }
 
+//
+//buttons
+//
 .button:hover{
     cursor: pointer;
 }
@@ -204,16 +209,57 @@ td:nth-child(2){
     border: 3px solid $accent-color;
     border-radius: 0px;
 }
-
-.form-control{
-    border-radius: 0px;
+.book{
+    margin: 40px;
+}
+.next{
+    float: right;
 }
 
-.form-control:active{
+.previous{
+    float: left;
+}
+
+//
+//index
+//
+.jumbotron{
+    height: 300px;
+    text-align: center;
+    background-color: $background-color;
+}
+
+//
+//lists
+//
+ul{
+    list-style-type: none;
+}
+ul .time {
+    font-weight: bold;
     color: $accent-color;
+    list-style-type: disc;
+}
+
+//
+//random
+//
+hr{
+    margin-bottom: 0px;
+}
+
+select{
+    height: 30px;
+}
+
+.pager{
+    padding: 0px;
+}
+
+td:nth-child(2){
+    text-align: right;
 }
 
 select{
     border-radius: 0px;
 }
-
