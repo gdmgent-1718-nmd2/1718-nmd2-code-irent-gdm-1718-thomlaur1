@@ -54,10 +54,11 @@ permalink: reserveer_betalen.html
                 </tr>
             </tbody>
         </table>
-        <ul class="pager">
-            <li class="previous"><a href="reserveer_gegevens.html" class="button button-primary">Vorige</a></li>
-            <li class="next"><a href="betalen.html" data-toggle="modal" data-target="#payment" class="button button-primary">Betalen</a></li>
-        </ul>
+        <div class="col-12 text-center buttons">
+            <a href="reserveer_gegevens.html" class="button button-primary">Vorige</a>
+            <a href="betalen.html" data-toggle="modal" data-target="#payment" class="button button-primary">Betalen</a>
+        </div>
+        <hr>
     </div>
 
 <!-- Modal -->
@@ -145,21 +146,32 @@ permalink: reserveer_betalen.html
         <div class="modal-content">
             <div class="modal-body">
                         <form>
-                            <div class="form-group">
-                                <label for="exampleInputName">Naam kaarthouder:</label>
-                                <input type="name" class="form-control" id="exampleInputName" placeholder="Naam">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/img/paypal.png" class="paymethod" alt="paypal">
+                                </div>
+                                <div class="col-4">
+                                    <img src="assets/img/mastercard.png" class="paymethod" alt="mastercard">
+                                </div>
+                                <div class="col-4">
+                                    <img src="assets/img/visa.png" class="paymethod" alt="visa">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="exampleInputName">Naam kaarthouder:</label>
+                                    <input type="name" class="form-control" id="exampleInputName" placeholder="Naam">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="exampleInputName">Kaartnummer:</label>
+                                    <input type="cardnumber" class="form-control" placeholder="6543 1234 1234 1234 2">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="exampleInputName">Vervaldatum:</label>
+                                    <input type="expiration-date" class="form-control" placeholder="07/20">
+                                </div>
+                                <div class="col-12 text-center buttons">
+                                    <a href="bedankt.html" class="button button-primary">Betalen</a>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputName">Kaartnummer:</label>
-                                <input type="cardnumber" class="form-control" placeholder="6543 1234 1234 1234 2">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputName">Vervaldatum:</label>
-                                <input type="expiration-date" class="form-control" placeholder="07/20">
-                            </div>
-                            <ul class="pager">
-                                <li class="next"><a href="bedankt.html" class="button button-primary">Betalen</a></li>
-                            </ul>
                         </form>
             </div>
         </div>

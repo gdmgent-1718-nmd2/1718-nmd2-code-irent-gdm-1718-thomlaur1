@@ -1,0 +1,357 @@
+
+$primary-color: darkgrey;
+$accent-color: crimson;
+$background-color: #ffffff;
+$text-color: #2e2e2e;
+$background-light: #efefef;
+
+//
+//queries sm
+//
+@media screen and (max-width: 425px){
+    h2{
+        font-size: 2em;
+    }
+}
+//
+//queries md
+//
+@media (min-width: 768px) { 
+    .text-rechts{
+        text-align: right;
+    }
+    .text-links{
+        text-align: left;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    .big-text{
+        font-size: 2em;
+    }
+}
+
+//
+//enkel voor lg
+//
+@media (max-width: 768px) {
+    .lg-show{
+        display: none;
+    }
+}
+
+//
+//queries lg
+//
+@media (min-width: 992px) { 
+
+}
+
+//
+//basics
+//
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+body{
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: 'PT Sans Narrow' , sans-serif;
+    padding-bottom: 300px;
+}
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+.body {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+//
+//text
+//
+h1{ 
+    margin: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: $accent-color;
+}
+
+p{
+    font-size: 18px;
+}
+
+.intro-text{
+    padding-left: 50px;
+    padding-right: 60px; 
+}
+
+.big-text{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+mark{
+    margin: none;
+    color: $accent-color;
+    background-color: $background-color;
+}
+
+mark:hover{
+    cursor: help;
+}
+
+.special{
+    border-bottom: $accent-color 6px dotted ;
+}
+
+//
+//afbeeldingen
+//
+img{
+    max-width: 100%;
+    height: auto;
+}
+.icon{
+    margin-top: 50px;
+    width: 180px;
+}
+
+.paymethod{
+    display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	height:auto;
+    width:100%;
+    padding: 30px;
+}
+
+//
+//navigation
+//
+.nav-page{
+    float:right;
+    margin: 20px;
+    color: $text-color;
+}
+
+.nav-page:hover,
+.nav-page:active{
+    text-decoration: none;
+    background-color: none;
+    color: $accent-color;
+    transition-duration: 0.2s;
+}
+.active{
+    text-decoration: none;
+    background-color: none;
+    color: $accent-color;
+    text-decoration: underline $accent-color;
+}
+.logo{
+    color: $accent-color;
+    font-size: 1.5em;
+    padding: 17px;
+    height: 100%;
+    float: left;
+}
+
+.toplijn{
+    border-top: 4px solid $accent-color;
+}
+
+//
+//footer
+//
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    float: left;
+    background-color: $background-color;
+    border-bottom: 4px solid $accent-color;
+  
+  }
+
+.footer-content{
+    margin: 20px;
+}
+
+.socialmedia{
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+.footer-blokken{
+    display: inline;
+}
+
+footer{
+    color: $text-color;
+  }
+  footer a{
+    color: $text-color;
+  }
+  footer a:hover{
+    text-decoration: none;
+    color: $accent-color;
+  }
+  .footer-blok{
+     background: $background-color;
+    padding-top: 2em;
+  }
+  
+//
+//forms
+//
+.form-control{
+    border-radius: 0px;
+}
+
+.form-control:active{
+    color: $accent-color;
+}
+.progress-bar{
+    background-color: $accent-color;
+}
+.progress{
+    margin: 20px 0; 
+}
+.checkbox{
+    padding: 10px;
+}
+.contact{
+    margin: 25vh 0 25vh 0;
+}
+
+//
+//tables
+//
+.table{
+    text-align: left;
+}
+
+
+//
+//buttons
+//
+.button:hover{
+    cursor: pointer;
+}
+
+.button{
+    color: $accent-color;
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-primary{
+    background-color: $background-color;
+    border-color: $accent-color;
+    border: 3px solid;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+
+.button-primary:hover,
+.button-primary:active{
+    text-decoration: none;
+    color: $background-color;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    border: 3px solid $accent-color;
+    border-radius: 0px;
+    transition-duration: 0.2s;
+}
+.book{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+.normal{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.next{
+    float: right;
+}
+
+.previous{
+    float: left;
+}
+
+.buttons{
+    padding: 0px;
+    margin:40px 0px 40px 0px;
+}
+//
+//index
+//
+.jumbotron{
+    height: 300px;
+    text-align: center;
+    background-color: $background-color;
+}
+
+.high{
+    height: 300px;
+}
+
+.medium{
+    height: 100%
+}
+//
+//lists
+//
+ul{
+    list-style-type: none;
+}
+ul .time {
+    font-weight: bold;
+    color: $accent-color;
+    list-style-type: disc;
+}
+
+//
+//random
+//
+select{
+    height: 30px;
+}
+
+td:nth-child(2){
+    text-align: right;
+}
+
+select{
+    border-radius: 0px;
+}
+
+.strook{
+    background-color: lightgray;
+    box-shadow: #2e2e2e;
+}
+
+.googlemaps{
+    margin: 30px 0 30px 0;
+}

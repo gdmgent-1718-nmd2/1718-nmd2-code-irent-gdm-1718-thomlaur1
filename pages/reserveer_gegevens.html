@@ -23,24 +23,33 @@ permalink: reserveer_gegevens.html
             </div>
           </div>
         <form>
-            <div class="form-group">
-                <label for="exampleInputName">Gegevens:</label>
-                <input type="name" class="form-control" id="exampleInputName" placeholder="Voornaam">
+            <div class="row">
+                <div class="form-group col-12">
+                    <label for="exampleInputName">Gegevens:</label>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <input type="name" class="form-control" id="exampleInputName" placeholder="Voornaam*">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <input type="surname" class="form-control" placeholder="Achternaam*">
+                </div>
+                <div class="form-group col-12">
+                    <input type="email" class="form-control" placeholder="email*">
+                </div>
+                <div class="form-group col-12">
+                    <input type="gsm" class="form-control" placeholder="gsm nummer*">
+                </div>
+                <div class="col-12 text-right">
+                    <small id="verplicht" class="form-text text-muted">*Verplichte velden</small>
+                </div>
+                <div class="col-12 text-center buttons">
+                    <a href="reserveer.html" class="button button-primary">Vorige</a>
+                    <a href="reserveer_betalen.html" class="button button-primary">Verder</a>
+                </div>
+                
             </div>
-            <div class="form-group">
-                <input type="surname" class="form-control" placeholder="Achternaam">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="email">
-            </div>
-            <div class="form-group">
-                <input type="gsm" class="form-control" placeholder="gsm nummer">
-            </div>
-            <ul class="pager">
-                <li class="previous"><a href="reserveer.html" class="button button-primary">Vorige</a></li>
-                <li class="next"><a href="reserveer_betalen.html" class="button button-primary">Verder</a></li>
-            </ul>
         </form>
+        <hr>
     </div>
 </body>
 </html>

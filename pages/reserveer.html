@@ -24,85 +24,91 @@ title : Reserveer
             </div>
         </div>
         <form>
-            <div class="form-group">
-                <label for="sel1">Selecteer maand</label>
-                <select class="form-control" id="sel1">
-                    <option>januari</option>
-                    <option>februari</option>
-                    <option>maart</option>
-                    <option>april</option>
-                    <option>mei</option>
-                    <option>juni</option>
-                    <option>juli</option>
-                    <option>augustus</option>
-                    <option>september</option>
-                    <option>oktober</option>
-                    <option>november</option>
-                    <option>december</option>
-                </select>
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="sel1">Selecteer maand*</label>
+                    <select class="form-control" id="sel1">
+                        <option>januari</option>
+                        <option>februari</option>
+                        <option>maart</option>
+                        <option>april</option>
+                        <option>mei</option>
+                        <option>juni</option>
+                        <option>juli</option>
+                        <option>augustus</option>
+                        <option>september</option>
+                        <option>oktober</option>
+                        <option>november</option>
+                        <option>december</option>
+                    </select>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="sel2">Selecteer dag*</label>
+                    <select class="form-control" id="sel2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                </div>
+                <div class="form-group col-12">
+                    <label for="sel3">Selecteer <mark data-toggle="modal" data-target="#myModal">tijdschema*</mark></label>
+                    <select class="form-control" id="sel3">
+                        <option>tijdschema 1</option>
+                        <option>tijdschema 2</option>
+                        <option>tijdschema 3</option>
+                    </select>
+                </div>
+                <div class="form-group col-12">
+                    <label for="sel4">Aantal personen*</label>
+                    <select class="form-control" id="sel4">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="checkbox col-6">
+                    <label><input type="checkbox" value=""> Instant pickup (€3)</label>
+                </div>
+                <div class="col-6 text-right">
+                    <small id="verplicht" class="form-text text-muted">*Verplichte velden</small>
+                </div>
+                <div class="col-12 text-right buttons">
+                    <a href="reserveer_gegevens.html" class="button button-primary">Verder</a>
+                </div>
+                
             </div>
-            <div class="form-group">
-                <label for="sel2">Selecteer dag</label>
-                <select class="form-control" id="sel2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="sel3">Selecteer <mark data-toggle="modal" data-target="#myModal">tijdschema</mark></label>
-                <select class="form-control" id="sel3">
-                    <option>tijdschema 1</option>
-                    <option>tijdschema 2</option>
-                    <option>tijdschema 3</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="sel4">Aantal personen:</label>
-                <select class="form-control" id="sel4">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" value=""> Instant pickup (€3)</label>
-            </div>
-            
-            <ul class="pager">
-                <li class="next"><a href="reserveer_gegevens.html" class="button button-primary">Verder</a></li>
-            </ul>
         </form>
+        <hr>
     </div>
 
 
