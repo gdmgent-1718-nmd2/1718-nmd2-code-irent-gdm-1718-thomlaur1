@@ -63,7 +63,6 @@ body{
     background-color: $background-color;
     color: $text-color;
     font-family: 'PT Sans Narrow' , sans-serif;
-    padding-bottom: 300px;
 }
 
   *,
@@ -76,6 +75,10 @@ body{
     margin: 0 auto;
     width: 100%;
   }
+
+.fill{
+    height: 60vh;
+}
 
 //
 //text
@@ -179,7 +182,7 @@ img{
 //footer
 //
 .footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
     padding: 1rem;
